@@ -43,7 +43,7 @@
         <h2>Administration Login</h2>
         <form action="<?php echo htmlspecialchars($_SERVER["adminlogin_process.php"]); ?>" method="post">
             <div class="avatar">
-                <img src="icon.jpg" class="rounded" alt="...">
+                <img src="assets/icon.jpg" class="rounded" alt="...">
             </div>
 
             <div class="mb-3">

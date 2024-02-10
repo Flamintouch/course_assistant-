@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/style.css">
     <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <title>Course Assistant</title>
 
@@ -16,7 +16,7 @@
 
     <div class="hero text-center">
             <h1>Course Assistant</h1>
-            <img src="hero.png" alt="hero-img"/>
+            <img src="assets/hero.png" alt="hero-img"/>
             <p>Brief information about the tool goes here.</p>
             <a class="btn btn-outline-light" href="main.php">Get Started</a>
     </div>
