@@ -131,3 +131,35 @@ padding: 2px 16px;
 
 }
 
+
+
+ /* Style properties for successful submission screen */
+
+.btn{
+    background-color: green;
+}
+
+.main-container{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin: 30px auto;
+    padding: 1em;
+    width:40%;
+    padding: 50px 100px;
+}
+
+
+@media screen and (max-width: 800px) {
+        body {
+           font-size: 12px;
+        }
+        
+      .main-container{
+        margin: 30px auto;
+        padding: 1em;
+        width:80%;
+       }
+}
+
+
+
+ /* End Style properties for successful submission screen */
