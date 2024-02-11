@@ -8,7 +8,34 @@
     <title>Course Assistant</title>
 
     <style>
+        /* For screens narrower than 480px */
+            @media (max-width: 480px) {
+            /* Add some padding inside the card container */
+            .container {
+            padding: 0px;
+            }
 
+            video {
+                width: 100%;
+                height: auto;
+            }
+            }
+
+            /* For screens between 480px and 768px */
+            @media (min-width: 480px) and (max-width: 768px) {
+            video {
+                width: 80 %;
+                height: auto;
+            }
+            }
+
+            /* For larger screens */
+            @media (min-width: 768px) {
+            video {
+                width: 768px00px;
+                height: 380px;
+            }
+            }
     </style>
 
 </head>
@@ -24,23 +51,18 @@
     <main>
         <div class="card">
         <div class="container">
-            <h4><b>UP YOUR CA GAME</b></h4>
-            <hr>
-            <p class="card-text">A user friendly platform to help enhence your assignments.</p>
+            <video responsive controls width="640" height="300" style="border-radius: 10px; box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;">
+                <source src="assets/video.mp4" type="video/mp4">
+                <source src="path/to/alternative.webm" type="video/webm">
+                <p>Your browser doesn't support HTML5 video.</p>
+            </video>
         </div>
         </div> 
-
-        <div class="card">
-        <div class="container">
-            <h4><b>NO NEED TO STRESS</b></h4>
-            <hr>
-            <p class="card-text">Work fast and quick by letting us handle some of your work.</p>
-        </div>
-        </div>
     </main>
+
     <!-- Footer -->
     <div class="footer">
-        <p>&copy; 2024 Course Assistant. All rights reserved. <a href="404.php">Terms of Use</a> | <a href="404.php">Privacy Policy</a></p>
+        <p>&copy; 2024 Course Assistant. All rights reserved. <a href="404.php">Terms of Use</a> | <a href="404.php">Privacy Policy</a>: Powered by Flamintouch</p>
     </div>
 </body>
 </html>
