@@ -1,4 +1,4 @@
-CREATE DATABASE simpledb;
+CREATE DATABASE ca_assistantDB;
 
 -- phpMyAdmin SQL Dump
 -- version 5.2.0
@@ -34,4 +34,11 @@ CREATE TABLE `submission` (
   `screenshot` LONGBLOB NOT NULL,
    PRIMARY KEY (`submissionID`)
 
+);
+
+CREATE TABLE admin (
+  adminID INT(5) NOT NULL AUTO_INCREMENT,
+  username VARCHAR(30) NOT NULL,
+  password VARCHAR(50) NOT NULL,
+  PRIMARY KEY (`adminID`)
 );

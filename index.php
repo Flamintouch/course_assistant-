@@ -62,7 +62,7 @@
 
     <!-- Footer -->
     <div class="footer">
-        <p>&copy; 2024 Course Assistant. All rights reserved. <a href="404.php">Terms of Use</a> | <a href="404.php">Privacy Policy</a>: Powered by Flamintouch</p>
+        <a href="adminlogin.php">Signin as Admin</a><p>&copy; 2024 Course Assistant. All rights reserved. <a href="404.php">Terms of Use</a> | <a href="404.php">Privacy Policy</a>: Powered by Flamintouch</p>
     </div>
 </body>
 </html>

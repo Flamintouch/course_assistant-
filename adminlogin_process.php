@@ -5,28 +5,27 @@ session_start();
 include 'connection.php';
 
 
-if($_SERVER["REQUEST_METHOD"] == "POST") {
-  $username = $_POST['username'];
-  $password = $_POST['password'];
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  // username and password sent from form 
+  $admin_username = mysqli_real_escape_string($conn,$_POST['username']); 
+  $admin_password = mysqli_real_escape_string($conn,$_POST['password']); 
 
-  $sql = "SELECT * FROM admin WHERE username = ? AND password = ?";
-  $stmt = $conn->prepare($sql);
-  $stmt->bind_param("ss", $username, $password);
+  $sql = "SELECT adminID FROM admin WHERE username = '$admin_username' and password = '$admin_password'";
+  $result = mysqli_query($conn,$sql);
+  $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
+  $count = mysqli_num_rows($result);
+
+  // If result matched $admin_username and $admin_password, table row must be 1 row
+  if($count == 1) {
+      $_SESSION['username'] = $admin_username;
+      
+      // Redirect to panel page
+      header("location: adminpanel.php");
+  }
   
-   // Execute the query
-   $stmt->execute();
-   $result = $stmt->get_result();
-
-  if ($result->num_rows == 1) {
-    $row = $result->fetch_assoc();
-    $_SESSION['username'] = $username;
-    header('Location: adminpanel.php');
-  }
   else {
-    $error_message = "Invalid admin credentials";
+      $error = "Your Login Name or Password is invalid";
   }
-
-  $stmt->close();
 }
 $conn->close();
 ?>

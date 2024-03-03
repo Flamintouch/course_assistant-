@@ -41,7 +41,7 @@
 
     <div class="main-container">
         <h2>Administration Login</h2>
-        <form action="<?php echo htmlspecialchars($_SERVER["adminlogin_process.php"]); ?>" method="post">
+        <form action="adminlogin_process.php" method="post">
             <div class="avatar">
                 <img src="assets/icon.jpg" class="rounded" alt="...">
             </div>
@@ -56,10 +56,10 @@
                 <input type="password" name="password" class="form-control" required>
             </div>
 
-            <div class="mb-3 form-check">
+            <!-- <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                 <label class="form-check-label" for="rememberMe">Remember me</label>
-            </div>
+            </div> -->
 
             <div class="mb-3">
                 <button class="btn btn-primary" type="submit">LOGIN</button>
